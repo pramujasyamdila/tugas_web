@@ -11,6 +11,12 @@
 </head>
 
 <body>
+   <?php
+   session_start();
+   if ($_SESSION['status'] != "login") {
+      header("location:login.php?pesan=belum_login");
+   }
+   ?>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="home.php">Berita</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +43,7 @@
    </nav>
    <div class="container">
       <header>
+         <h4>Selamat datang, <?php echo $_SESSION['username']; ?>! anda telah login.</h4>
          <h3>Tugas Pemerograman Web</h3>
       </header>
       <a class="btn btn-success btn-sm float-right mb-4" href="add.php"> <i class="fa fa-plus"></i> Tambah Berita</a>

@@ -4,7 +4,7 @@
 <html>
 
 <head>
-   <title>Cindy Putri Clarita : 181011400711</title>
+   <title>Home</title>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,26 +19,18 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Master Berita
-               </a>
-               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="berita.php">Master Berita</a>
-                  <a class="dropdown-item" href="kategori.php">Master Kategori</a>
-               </div>
-            </li>
+
          </ul>
-         <form action="berita.php" class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Pencarian Berita" name="cari" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Cari">Search</button>
-         </form>
+         <div class="form-inline my-2 my-lg-0">
+            <a href="login.php" class="btn btn-primary my-2 my-sm-0">Login</a>
+         </div>
       </div>
    </nav>
    <div class="container">
       <header>
-         <h3>Kumpulan Berita</h3>
+         <h3 class="text-center">ERLANGGA CNN NEWS</h3>
       </header>
+      <hr>
       <br>
       <?php
       if (isset($_GET['cari'])) {
